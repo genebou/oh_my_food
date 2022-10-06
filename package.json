@@ -1,0 +1,27 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "OpenClassrooms, WebDeveloper project #3",
+  "main": "index.html",
+  "scripts": {
+    "scss": "sass ./sass:./css --style compressed",
+    "start": "sass --watch ./sass:./css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genebou/oh_my_food.git"
+  },
+  "keywords": [
+    "SCSS",
+    "GIT",
+    "Animation",
+    "CSS",
+    "HTML"
+  ],
+  "author": "Geneobou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/genebou/oh_my_food/issues"
+  },
+  "homepage": "https://github.com/genebou/oh_my_food#readme"
+}
