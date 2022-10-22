@@ -6,10 +6,9 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 		<title>Ohmyfood</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">	
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">	
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=famille=Shrikhand&swap" rel="stylesheet">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">	
 		<script src="https://kit.fontawesome.com/0e02425555.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -18,27 +17,128 @@
 				<div id="entête">
 					<h1>OhmyFood</h1>
 				</div>
-				<div id="search">
-					<form id="search" method="POST" action="traitement.php">
-			 			<div>
-			    			<i class="fa-solid fa-location-dot position"></i>
-			    		</div>								
-						<input type="text" name="search" placeholder="Paris, Belleville" />
+				<div id="position">
+					<i class="fa-solid fa-location-dot"></i>
+					<form id="search" method="POST" action="traitement.php">			 					
+						<input type="text" name="search" placeholder="Paris, Belleville">
 					</form>	
-					<div id="slogans">
+				</div>
+				<div id="slogans">
 						<h2>Réservez le diner qui vous convient</h2>
 						<P>Découvrez des restaurants d'exception, sélectionnés par nos soins</P>
-					</div>
 				</div>
 			</header>
-			<main>
-				<Section>
-					<h2>Fonctionnement</h2>
-				</Section>
-				<aside>
+				<main>
+					<section>
+						 <div class="fonctionnement">
+			    	<h3>Fonctionnement</h3>
+			 	  	<ul>
+				 		<li><div class="fonctionnement-container">
+				 			<div class="fonctionnementr-ico">
+				 				<i class="fa-solid fa-mobile-screen"></i>
+				 			</div>
+				 			<div class="fonctionnement-text">
+				 				<a href="#">Choisissez un restaurant</a>
+				 			</div>
+				 			</li>
+				 		<li>
+				 			<div class="fonctionnement-container">
+				 			<div class="fonctionnement-ico">
+				 			<i class="fa-solid fa-list"></i>
+
+
+
+</i>
+
+</i>
+				 		</div>
+				 		<div class="fonctionnement-text">
+				 		<a href="#">Composez votre menu</a>
+				 	</div>
+				 </li>
+				 		<li>
+				 			<div class="fonctionnement-container">
+				 			<div class="fonctionnement-ico">
+				 				<i class="fa-solid fa-store"></i>
+
+
+
+
+				 			</div>
+				 			<div class="fonctionnement-text">
+				 				<a href="#">Dégustez au restaurant</a>
+				 			</div>
+				 		</li>
+				 	</ul>
+			</section>
+			<aside>
+			
 					<h2>Restaurants</h2>
+					<div class="contenant">
+						<a href="#">
+							<img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+						</a>
+						<div class="texte_centrer">
+							<h3>La palette du goût</h3>
+							<p>Ménilmontant</p>
+							<span class="rating">
+								<i class="fa-thin fa-heart"></i>
+							</span>
+						</div>
+					</div>
+					<div class="contenant">
+						<a href="#">
+							<img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+						</a>
+						<div class="texte_centrer">
+							<h3>La note enchantée</h3>
+							<p>Charonne</p>
+							<span class="rating">
+								<i class="fa-solid fa-heart"></i>
+							</span>
+						</div>
+					</div>				
+					<div class="contenant">
+						<a href="#">
+							<img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+						</a>
+						<div class="texte_centrer">
+							<h3>A la française</h3>
+							<p>Cité Rouge</p>
+							<span class="rating">
+								<i class="fa-thin fa-heart"></i>
+							</span>
+						</div>
+					</div>
+				<div class="contenant">
+						<a href="#">
+							<img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+						</a>
+						<div class="texte_centrer">
+							<h3>Le délice des sens</h3>
+							<p>Folie-Méricourt</p>
+							<span class="rating">
+								<i class="fa-thin fa-heart"></i>
+							</span>
+						</div>
+					</div>
 				</aside>
 			</main>
+			<footer>/
+				<ul> 
+					<li><strong>Ohmyfood</strong></li>
+					<li>
+						<i class="fa-solid fa-utensils"></i> 
+					<P>Proposer un restaurant</P>
+						</li>
+					<li> 
+						<i class="fa-solid fa-handshake-angle"></i>
+						<P>Devenir partenaire</P>
+					</li>
+					<li> Mentions légales</li>
+					<li> <a href="mailto:mail@exemple.fr">Contact</a><li>
+				</ul>
+			</footer>
 
 		</div>
 	</body>
