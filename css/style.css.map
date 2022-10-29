@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/_reset.scss","../sass/_home.scss"],"names":[],"mappings":"AAAA,EACI,iCACA,WACA,qBACA,6BACA,SCLJ,KACC","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/_reset.scss","../sass/_home.scss","../sass/style.scss"],"names":[],"mappings":"AAAA,EACI,2CACA,WACA,qBACA,+BACA,SCLJ,KACC,yBCED,EACE,sBACA,wCACA,eAEF,QACC","file":"style.css"}
