@@ -13,22 +13,27 @@
 	</head>
 	<body>
 		<div id="page">
-			<header>
-				<div id="entête">
-					<h1>OhmyFood</h1>
+			<header>								
+				<div id="logo">
+					<img src="images/logo/ohmyfood.png" alt="OhmyFood">
 				</div>
-				<div id="position">
-					<i class="fa-solid fa-location-dot"></i>
-					<form id="search" method="POST" action="traitement.php">			 					
-						<input type="text" name="search" placeholder="Paris, Belleville">
-					</form>	
-				</div>
-				<div id="slogans">
-						<h2>Réservez le diner qui vous convient</h2>
-						<P>Découvrez des restaurants d'exception, sélectionnés par nos soins</P>
-				</div>
-				<div id="exploration">
+					<div id="entete">
+						<div id="exploration">
 					<P>Explorez nos restaurants</P>
+						</div>
+				
+						<div id="slogans">
+							<h2>Réservez le diner qui vous convient</h2>
+								<P>Découvrez des restaurants d'exception, sélectionnés par nos soins</P>
+						</div>
+						<div id="position">
+							<i class="fa-solid fa-location-dot"></i>
+							<form id="search" method="POST" action="traitement.php">			 					
+								<input type="text" name="search" placeholder="Paris, Belleville">
+							</form>	
+						</div>
+					</div>
+
 			</header>
 				<main>
 					<section>
@@ -75,7 +80,8 @@
 			<aside>
 			
 					<h2>Restaurants</h2>
-					<div class="contenant">
+					
+						<figure>
 						<a href="#">
 							<img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
 						</a>
@@ -86,8 +92,11 @@
 								<i class="fa-thin fa-heart"></i>
 							</span>
 						</div>
-					</div>
-					<div class="contenant">
+					</figure>
+						
+					
+					
+						<figure>
 						<a href="#">
 							<img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
 						</a>
@@ -98,8 +107,10 @@
 								<i class="fa-solid fa-heart"></i>
 							</span>
 						</div>
-					</div>				
-					<div class="contenant">
+					</figure>
+								
+					
+						<figure>
 						<a href="#">
 							<img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
 						</a>
@@ -109,9 +120,12 @@
 							<span class="rating">
 								<i class="fa-thin fa-heart"></i>
 							</span>
+						
 						</div>
-					</div>
-				<div class="contenant">
+					</figure>
+					
+				
+					<figure>
 						<a href="#">
 							<img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
 						</a>
@@ -122,7 +136,8 @@
 								<i class="fa-thin fa-heart"></i>
 							</span>
 						</div>
-					</div>
+					</figure>
+				
 				</aside>
 			</main>
 			<footer>
