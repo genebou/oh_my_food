@@ -16,19 +16,40 @@ header #entête{
 	font-family: skrikland;
 	font-size: 30px;
 	font-weight: bold;
+	margin: 20px;
+	font-style: italic;
 }
 header #position{
 	display:  flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	border-style: solid;
 	background-color: #d3d3d3;
+	height: 50px;
+}
+header #position #search{
+	color: black;
+}
+header #position input {
+		background-color: #d3d3d3;
+		border-style: none;
+		font-weight: bold;
+		color: black;
 }
 h2{
 	font-size: 20px;
 	font-weight: bold;
 }
+header #slogans{
+	margin: 30px 30px 0px 30px;
+}
+header #slogans p{
+	margin-top: 30px;
+	color: darkgrey;
+	font-size: 16px;
+}
+
 header #exploration{
 	background-color: #9356dc;
   bordeR: none;
@@ -37,28 +58,58 @@ header #exploration{
   font-size: 18px;
   line-height: 40px;
   text-align: center;
-  margin: 0;
+  margin: 40px;
+  box-shadow: 0px 3px 3px #f2f2f2;
+  
+}
+section .fonctionnement ul {
+	display: flex;
+	flex-direction: column;
 }
 .fonctionnement h2{
 	text-align: left;
+	margin: 10px;
+}
+section .fonctionnement li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 10px;
+	border-radius: 25px;
+	background-color: #f2f2f2;
+	box-shadow: 1px 1px 3px lightgrey;
+}
+section .fonctionnement-text{
+	text-align: center;
 }
 section  .fonctionnement-container{
 	display:  flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	border-radius: 25px;
-	background-color: #eeeeee;
-	padding: 10px;
-	margin: 20px;
+	
+	padding-left: 10px;
+	margin: 10px;
+align-items: center;
+	
+	width: 100%;
 }
-section  .fonctionnement-container p{
+section .fonctionnement-numero{
+	width: 20px;
+
+	}
+section  .fonctionnement-numero p{
 	border-radius: 25px;
 	color: white;
 	background-color: #9356DC;
 	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	
 }
 section .fonctionnement-ico{
 	color: #9356DC;
+	font-size: 20px;
+	padding-right: 20px;
 }
 aside{
 	display: flex;
