@@ -1,16 +1,16 @@
 
 * {
 	box-sizing: border-box;
-	font-family:shrikhand,sans-serif;
-	font-size: 14px;
+	font-family:roboto,sans-serif;
+	font-size: 14px;	
 }
 
 body{
 	background-color:$color-primary-body;
 }
 
-.page{
-	width: 1440px;
+.page {
+	max-width: 1440px;
 	padding: 10px;
 }
 
