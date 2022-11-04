@@ -11,24 +11,36 @@ $color-grey-shadow:lightgrey;
 $color-background-footer:#444444;
 $color-primary-font:black;
 
+
 * {
 	box-sizing: border-box;
 	font-family:roboto,shrikhand,sans-serif;
 	font-size: 14px;
   }
-  .page{
+  body{
+	background-color:$color-primary-body;}
+  	.page{
 	  width: 1440px;
 	  padding: 10px;
-  }
-   
-  body{
-	background-color:$color-primary-body;
-  }
-  header #entete{
+	}
+  	.header {
+  		.header.entete{
 		  display: flex;
 		  flex-wrap: wrap;
-  }
-  header #position{
+
+			.header.entete.exploration{
+			background-color: $color-primary-btn;
+		  border: none;
+		  border-radius: 25px 25px 25px 25px;
+		  color:$color-primary-body;
+		  font-size: 18px;
+		  line-height: 40px;
+		  text-align: center;
+			margin: 40px;
+		  width: 20%;
+		  }
+  
+ 		 	.position{
 	  display:  flex;
 	  flex-direction: row;
 	  align-items: center;
@@ -39,48 +51,39 @@ $color-primary-font:black;
 	  width: 20%;
 	  margin: 40px;
 	  border-radius: 25px 25px 25px 25px;
-  }
-  header #position #search{
-	  color:$color-primary-font;
-  }
-  header #position input {
+  
+ 		 		>.search{
+	 		 color:$color-primary-font;
+  				}
+
+ 				 >.input {
 		  background-color: $color-grey-primary;
 		  border-style: none;
 		  font-weight: bold;
 		  color:$color-primary-font;
-  }
-  h2{
-	  font-size: 20px;
-	  font-weight: bold;
-  }
-  header #slogans{
+ 		 		}
+		}
+   
+  		.slogans{
 	  margin: 30px 30px 0px 300px;
 	  width: 60%;
-  }
-  header #slogans p{
+	 	 >.h2{
+		font-size: 20px;
+		font-weight: bold;
+			}
+   			>.p{
 	  margin-top: 30px;
 	  color: darkgrey;
 	  font-size: 16px;
 	  width: 80%;
-  }
-  
-  header #exploration{
-	  background-color: $color-primary-btn;
-	border: none;
-	border-radius: 25px 25px 25px 25px;
-	color:$color-primary-body;
-	font-size: 18px;
-	line-height: 40px;
-	text-align: center;
-	  margin: 40px;
-	box-shadow: 0px 3px 3px $color-grey-secondary;
-	width: 20%;
-	
-  }
+  			}
+ 		 }
+	}	  
+}
   section{
 	  background-color:$color-primary-body;
 	  margin-bottom: 30px;
-  }
+  
   
   .fonctionnement h2{
 	  text-align: left;
@@ -135,6 +138,8 @@ $color-primary-font:black;
 	  font-size: 20px;
 	  padding-right: 20px;
   }
+
+}
   aside{
 	  display: flex;
 	  flex-direction: column;
@@ -222,7 +227,10 @@ $color-primary-font:black;
 	  text-align: center;
 	  color:$color-primary-body;
 	  }
-  
+	
+
+
+
   @media only screen and (max-width: 768px){ /*phone*/
 	  header img{
 		  width: 60%;
@@ -296,5 +304,6 @@ $color-primary-font:black;
 		  width: 20px;
 	  margin: 10px 10px 10px 0px;
   }
-}
+  }
+
   
