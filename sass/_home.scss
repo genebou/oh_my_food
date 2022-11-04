@@ -1,6 +1,118 @@
-body {
-	background-color: white;
+section {
+	background-color:$color-primary-body;
+	margin-bottom: 30px;
+  
+  
+  	.fonctionnement {
+  		h2 {
+	 		text-align: left;
+	  		margin: 10px;
+  		}
+  		ul {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+	  		li {
+	  			display: flex;
+	  			flex-direction: row;
+	  			align-items: center;
+	  			margin: 10px;
+	  			border-radius: 60px;
+	  			background-color: $color-grey-secondary;
+	  			box-shadow: 1px 1px 3px lightgrey;
+	  		}
+	  	}
+	}
+	
+	.fonctionnement-numero {
+		width: 20px;
+	}
+
+	.fonctionnement-container{
+		display:  flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		
+		padding-left: 10px;
+		margin: 20px;
+		align-items: center;		
+	}
+
+	.fonctionnement-text{
+	  	text-align: center;
+	}
+  
+	.fonctionnement-numero p{
+	  	border-radius: 25px;
+	  	color: white;
+	  	background-color: $color-primary-btn;
+	  	font-size: 20px;
+	  	width: 100%;
+	  	text-align: center;
+  	}
+
+	.fa-solid{
+	  	color:$color-primary-btn;
+	  	font-size: 20px;
+	  	padding-right: 20px;
+  	}
+
 }
-footer{
-	color:white;
+  
+aside {
+	display: flex;
+	flex-direction: column;  
+	flex-wrap: wrap;
+	background-color:$color-grey-secondary;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	justify-items: stretch;
+
+  	.title{
+	  	text-align: left;
+	  	margin: 10px;
+  	}
+  	
+  	#presentation-restaurants{
+		display: flex;
+	  	flex-wrap: wrap;
+  	}
+  	  	
+  	figure{
+	  	display: flex;
+	  	width: 40%;
+	  	flex-direction: column;
+	  	border-radius: 10px;
+	  	box-shadow: 1px 2px 3px lightgrey;
+	  	margin: 10px;
+	  	background-color:$color-primary-body;
+	  	h3{
+			font-weight: bold;
+		  	margin-top: 5px;
+		  	margin-bottom:  10px;
+		  	margin-left: 5px;
+		  	font-size: 18px;
+  		}
+  		.contenu-figure #lieu {
+	  		width: 80%;
+  		}
+
+  		img{
+	  		width: 100%;
+	  		border-radius: 10px 10px 0px 0px;
+	  	}
+
+	  	#rating {
+		  	text-align: right;
+	  	}
+	}
+	  
+	.contenu-figure{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 5px;
+	}
+	  
 }
