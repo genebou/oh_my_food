@@ -22,25 +22,22 @@ header {
 		background-color: $color-grey-secondary;
 			#exploration{
 			background-color: $color-primary-btn;
-  		
   			border-radius: 25px 25px 25px 25px;
   			color: $color-primary-body;
   			font-size: 18px;
   			line-height: 40px;
   			text-align: center;
-			
   			width: 60%;
 					 }
-  
  			#position{
 				display: flex;
 				flex-direction: row;
 				justify-content: space-around;
 				justify-items: center;
-			border-style: solid;
-			height: 50px;
-			box-shadow:2px -2px $color-grey-secondary;
-			background-color: $color-grey-primary;
+				border-style: solid;
+				height: 50px;
+				box-shadow:2px -2px $color-grey-secondary;
+				background-color: $color-grey-primary;
 				align-items: center;
 	 		 	#search {
 	 			 color:$color-primary-font;
@@ -60,19 +57,19 @@ header {
 				}
 			}
   			#slogans {
-	  		margin: 30px;
+	  			margin: 30px;
 	 	 		h2{
-				font-size: 20px;
-				font-weight: bold;
-				}
+					font-size: 20px;
+					font-weight: bold;
+					}
    				>p {
-	  			margin-top: 30px;
-	  			color:$color-background-footer;
-	  			font-size: 16px;		
-  				}
- 		}
-	}	  
-}
+	  				margin-top: 30px;
+	  				color:$color-background-footer;
+	  				font-size: 16px;		
+  					}
+ 				}
+}}	  
+
 main {
 	background-color:$color-primary-body; 
 	h2 {
@@ -83,6 +80,7 @@ main {
 		  h3{
 			font-size:15px;
 		  }
+		 
 }	
 section {
 	margin-bottom: 30px;
@@ -104,8 +102,9 @@ section {
 	  			align-items: center;
 	  			margin: 10px;
 	  			border-radius: 60px;
-	  			background-color: $color-grey-secondary;
-	  			box-shadow: 5px 3px 8px $color-grey-shadow;
+				background-color: $color-grey-secondary;
+				box-shadow:5px 3px 8px $color-grey-shadow;
+				
 				  .fonctionnement-numero {
 					width: 20px;
 					border-radius: 25px;
@@ -127,29 +126,34 @@ section {
 					align-items: center;
 					.fonctionnement-text{
 						text-align: center;
+						a{
+						color:black;
 				  }	
+				}
 				  .fonctionnement-ico{
 					width:20px;
 					margin-right:15px;
-					.fa-solid{
-					color:$color-primary-btn;
-					font-size: 20px;
-					padding-right: 20px;
-						}
+					
 				  }	
 				}
 	  		}
 	  	}
 	}
 }
+aside {
+	> p{
+		color:$color-background-footer;
+}
+}
 footer {
 	align-items: center;
 	background-color:$color-background-footer;
 	color:$color-primary-body;  
-	h3{
-		font-family:shrikhand ;
+	h3{		
+		font-family: 'Shrikhand', cursive;
 		font-weight: bold;
 		font-size: 24px;
+		font-style:italic;
 		padding: 10px;
 		text-align: center;
 		color:$color-primary-body;
@@ -157,15 +161,15 @@ footer {
 	p {
 		color:$color-primary-body;
 	}
-	ul {
-		display: flex;
-	  	flex-direction: row;
+	ul{
+		display:flex;
 	  	li {
 	  		display: flex;
 	  		padding: 10px 2px 2px 10px;
 	  		align-items: center;
 	  		justify-items: stretch;
 	  		width: 25%;
+			
 	  		.fa-solid {
 		  		width: 20px;
 	  			margin: 10px 10px 10px 0px;
@@ -174,3 +178,4 @@ footer {
 	  	}
   	}
 }
+

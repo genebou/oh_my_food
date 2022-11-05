@@ -48,8 +48,8 @@ aside {
 	display: flex;
 	flex-direction: column;  
 	background-color:$color-grey-secondary;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	justify-items: stretch;
 
   	.title{
@@ -65,8 +65,7 @@ aside {
 	  			display: flex;
 				flex-direction: column;
 			margin:20px;
-				
-				box-shadow: 2px 2px 2px 2px $color-grey-shadow;
+			box-shadow: 5px 3px 8px $color-grey-shadow;				
 				border-radius: 15px;
 				a{
 					width: 100%;
@@ -95,9 +94,16 @@ aside {
 							flex-direction: row;
 							justify-content:space-between;
 							align-items: center;
-							.fa-solid{
+							>.fa-solid{
 								color:$color-primary-btn;
-								font-size: 25px;
+								font-size: 20px;
+								padding-right: 20px;
+								}
+							>.fa-regular{
+								color:$color-background-footer;
+								font-size: 20px;
+								padding-right:20px;
+								}
 							}
 							
 						}	
@@ -105,4 +111,14 @@ aside {
 				}
 
 			}
-		}
+		
+footer{
+	display:flex;
+	flex-direction: column;
+	ul{
+		flex-direction:column;
+		align-items: flex-start;
+		width:100%;
+	}
+	
+}
