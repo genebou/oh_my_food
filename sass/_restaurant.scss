@@ -1,0 +1,33 @@
+header{
+    display:flex;
+    flex-direction: column;
+    #logo{
+        display: flex;
+        align-items: center;
+        }
+        #entete{
+            width:100%;
+            
+            figure{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                
+                img{
+                    width:100%;
+                }
+                .titre{
+                    border-radius:60px 60px 0px 0px;
+                display:flex;
+                height: 100px;
+                width:100%
+                
+                h1{
+                    width:100%;
+                    border-radius:25px;
+                }
+
+                 }
+             }
+        }
+    }
