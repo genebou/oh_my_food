@@ -1,18 +1,23 @@
 header{
+	#logo {
+		img{
+		align-items: center;
+		height:auto;
+						}
+			}
 	#entete{
-		#logo .img{
-			width:80%;
-			height:auto;
-			max-width: 80px;
-		}
+		flex-direction: column;
+		align-items: center;
+		
 		#position{
-			width: 100%;
+			width: 100%;		
 		}
 		#slogans{
-			>p{
-				width: 80%;
-				text-align: center;
-			}
+			text-align: center;			
+		}
+		
+		#exploration{
+			margin-bottom: 40px;
 		}
 	}
 }
@@ -32,7 +37,7 @@ section {
    
   	.fonctionnement {
   		h2 {
-	  		margin: 10px;
+	  		margin: 20px;
   		}
   		ul {
 			flex-direction: column;			
@@ -49,7 +54,7 @@ aside {
 
   	.title{
 	  	text-align: left;
-	  	margin: 10px;
+	  	margin: 20px;
   	}
   	
   	#presentation-restaurants{
@@ -59,7 +64,7 @@ aside {
   			figure{
 	  			display: flex;
 				flex-direction: column;
-			margin:30px;
+			margin:20px;
 				
 				box-shadow: 2px 2px 2px 2px $color-grey-shadow;
 				border-radius: 15px;
