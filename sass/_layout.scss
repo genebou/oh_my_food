@@ -2,7 +2,10 @@
 * {
 	box-sizing: border-box;
 	font-family:roboto,sans-serif;
-	font-size: 14px;	
+	font-size: 14px;
+	$cd-btn: #011c37;
+$cd-txt: #15DEA5;
+	
 }
 
 body{
@@ -11,6 +14,7 @@ body{
 
 .page {
 	max-width: 1440px;
+	
 }
 header {
 	display:flex;
@@ -22,21 +26,27 @@ header {
 	}
 }
 
+
 main {
-	background-color:$color-primary-body; 
+	background-color:$color-primary-body;
+
+
+	.btn {
+		transform: scale(1);
+		&:hover {
+			transform: scale(1.8);
+		}  	
+	}
 	h2 {
-		font-weight:bold;
-		 
+		font-weight:bold;		 
 		font-size: 20px;
 		  } 
 		  h3{
 			font-size:15px;
 		  }
 		 
-}	
-@mixin main-shadow($color:$color-grey-primary){
-	 box-shadow: 5px 3px 8px  darken($color, 10%);
-	}
+		  @mixin main-shadow($color:$color-grey-primary)
+	
 aside {		
 	figure{
 		@include main-shadow;
@@ -45,6 +55,7 @@ aside {
 		color:$color-background-footer;
 	}
 }
+
 footer {
 	align-items: center;
 	background-color:$color-background-footer;
@@ -79,4 +90,4 @@ footer {
 	  	}
   	}
 }
-
+}
