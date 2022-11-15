@@ -34,9 +34,7 @@ main {
 		  }
 		 
 }	
-@mixin main-shadow($color:$color-grey-primary){
-	 box-shadow: 5px 3px 8px  darken($color, 10%);
-	}
+
 aside {		
 	figure{
 		@include main-shadow;
