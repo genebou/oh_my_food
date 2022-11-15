@@ -1,8 +1,40 @@
 @media only screen and (min-width: 968px){ /*desktop*/
 	  
-
-
-section{
-    width:40%;
+#entete{
+    display:flex;
+        #position{
+        width:35%;
+        border-radius:25px;
+        }
+         #exploration{
+        width:35%;
+        line-height:45px;
+         }
+        }
+section {
+    margin:0px;
+        .fonctionnement{
+            background-color: $color-grey-secondary;
+            h2{
+        margin:0px;
+        padding-left:20px;
+        }
+        ul{
+         flex-direction: row;
+         justify-content: space-evenly;
+    }
 }
 }
+#presentation-restaurants{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+         figure{
+        width: 35%;
+         }
+    
+    }
+}
+    
+
