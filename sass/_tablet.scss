@@ -1,3 +1,32 @@
 @media only screen and (min-width: 768px){ /*tablet*/	
-	  	
+	header{
+        #entete{
+        width: 100%;
+            
+             #exploration{
+                 width:50%;
+                margin:0px;
+                    p{
+                     text-align: center;
+                  }
+        
+                 }  	
+            }
+    }
+section{
+    ul{
+        width:50%;
+         }
+    }   
+aside{
+    #presentation-restaurants{
+        figure{
+            flex-direction: row;
+            a{
+                width:150%;
+                }
+             }
+         }
+    }
 }
+

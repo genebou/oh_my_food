@@ -1,7 +1,8 @@
 @media only screen and (min-width: 968px){ /*desktop*/
 	  
 #entete{
-    display:flex;
+       flex-direction: row;
+   
         #position{
         width:35%;
         border-radius:25px;
@@ -22,6 +23,7 @@ section {
         ul{
          flex-direction: row;
          justify-content: space-evenly;
+         width:100%;
     }
 }
 }
