@@ -12,15 +12,7 @@ body{
 .page {
 	max-width: 1440px;
 }
-header {
-	display:flex;
-	flex-direction:column;
-	align-items: center;
-	#entete{
-		background-color: $color-grey-secondary;
-		
-	}
-}
+
 
 main {
 	background-color:$color-primary-body; 

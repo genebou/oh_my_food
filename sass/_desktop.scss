@@ -1,5 +1,5 @@
 @media only screen and (min-width: 968px){ /*desktop*/
-	  
+header{	  
 #entete{
        flex-direction: row;
    
@@ -9,9 +9,10 @@
         }
          #exploration{
         width:35%;
-        line-height:45px;
+        height:45px;
          }
-        }
+    }
+ }
 section {
     margin:0px;
         .fonctionnement{
@@ -27,6 +28,7 @@ section {
     }
 }
 }
+aside{
 #presentation-restaurants{
         display:flex;
         flex-direction: row;
@@ -34,9 +36,13 @@ section {
         justify-content: space-around;
          figure{
         width: 35%;
+        a img{
+            height:200px;
+        }
          }
     
     }
+}
 }
     
 

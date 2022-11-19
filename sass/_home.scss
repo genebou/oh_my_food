@@ -1,24 +1,19 @@
 header{
-	#logo {
-		img{
-		align-items: center;
-		height:auto;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+		#logo {
+			img{
+			align-items: center;
+			height:auto;
+			}
 		}
-	}
 	#entete{
-		
+		background-color: $color-grey-secondary;
+		display:flex;
+		flex-direction:column;
 		align-items: center;
-	
-		#exploration{
-			margin: 40px;
-			background-color: $color-primary-btn;
-		    border-radius: 25px 25px 25px 25px;
-	 		 color: $color-primary-body;
-	  		font-size: 18px;
-	  		line-height: 45px;
-	  		text-align: center;
-	  	
-			 }
+		}	
 	 	#position{
 			display: flex;
 			flex-direction: row;
@@ -29,6 +24,7 @@ header{
 			box-shadow:2px -2px $color-grey-secondary;
 			background-color: $color-grey-primary;
 			align-items: center;
+			width:100%;
 					
 			#search {
 		    	color:$color-primary-font;
@@ -58,16 +54,27 @@ header{
 			  	color:$color-background-footer;
 			 	 font-size: 16px;		
 			 	 }
+		}
+	 #exploration{
+			margin: 40px;
+			background-color: $color-primary-btn;
+			border-radius: 25px 25px 25px 25px;
+			color: $color-primary-body;
+			font-size: 18px;
+			line-height: 45px;
+			padding-left:10px;
+			padding-right:10px;
 			 }
-		}	
-	}
+	 }
+			
+	
 
 section {
 	margin-bottom: 30px;
    
   	.fonctionnement {
   		h2 {
-			weight:bold;
+			font-weight:bold;
 	 		text-align: left;
 	  		margin: 10px;
   		}

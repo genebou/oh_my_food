@@ -14,8 +14,10 @@
             }
     }
 section{
-    ul{
-        width:50%;
+    .fonctionnement ul{
+        width:auto;
+        flex-direction: row;
+        flex-wrap: wrap;
          }
     }   
 aside{
@@ -24,6 +26,10 @@ aside{
             flex-direction: row;
             a{
                 width:150%;
+                img{
+                    border-radius:15px 0px 0px 15px;
+                    
+                }
                 }
              }
          }
