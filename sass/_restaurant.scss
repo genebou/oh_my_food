@@ -12,22 +12,77 @@
                 display:flex;
                 flex-direction: column;
                 align-items: center;
+                background-image: url();
                 
                 img{
                     width:100%;
                 }
-                .titre{
+                .title{
                     border-radius:60px 60px 0px 0px;
                 display:flex;
                 height: 100px;
                 width:100%;
+                background-color: $color-grey-secondary;
+                justify-content: space-evenly;
+                padding:25px;
+                font-family: shrikhand;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 25px;
                 
                 h1{
-                    width:100%;
+                    
                     border-radius:25px;
+                    
+                    
                 }
 
                  }
              }
+        }
+    }
+    #main_restaurant{
+        section{
+            display:flex;
+            flex-direction:column;
+            background-color: $color-grey-secondary;
+            ul{
+                display:flex;
+                flex-direction:column;
+                padding:10px;
+                li{
+                    display:flex;
+                    flex-direction:column;
+                    h2{
+                        padding-bottom:20px;
+                        font-weight: bold;
+                        margin-left: 5px;
+                    }
+                   
+                    .carte_plats{
+                        display:flex;
+                        flex-direction: column;
+                        margin-top:10px;
+                        margin-bottom: 10px;
+                        border-radius: 15px 15px 15px 15px;
+                        background-color: $color-primary-body;
+                        @include main-shadow;
+                        h3{
+                            font-weight:bold;
+                            margin:10px 10px 5px 5px;
+                                                }
+                        .carte_plats--details{
+                            display:flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            margin:5px 15px 15px 5px;
+                            .Price{
+                                font-weight: bold;
+
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
