@@ -64,6 +64,15 @@ header{
 			line-height: 45px;
 			padding-left:10px;
 			padding-right:10px;
+			transition-property:transform;
+			transition-duration:3s;
+			opacity:1;
+				transition: opacity 250ms;
+			&:hover{
+				background-color: lighten($color-primary-btn,5);
+				opacity:0.8;
+				
+			}
 			 }
 	 }
 			
