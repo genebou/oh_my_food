@@ -42,6 +42,7 @@
         section{
             display:flex;
             flex-direction:column;
+            align-items: center;
             background-color: $color-grey-secondary;
             ul{
                 display:flex;
@@ -83,6 +84,31 @@
                     }
                 }
             }
+                .btn{
+                    margin: 40px;
+                    background-color: $color-primary-btn;
+                    border-radius: 25px 25px 25px 25px;
+                    color: $color-primary-body;
+                    font-size: 18px;
+                    line-height: 45px;
+                    padding-left:10px;
+                    padding-right:10px;
+                    transition-property:transform;
+                    transition-duration:3s;
+                    opacity:1;
+                    transition: opacity 250ms;
+                    height: 45px;
+                    width: 200px;
+                        p{
+                         text-align:center;
+                            }
+                        &:hover{
+                            background-color: lighten($color-primary-btn,5);
+                            opacity:0.8;
+                            
+                        }    
+                  } 
         }
-    }      
+    }
+   
   
