@@ -2,8 +2,13 @@
     display:flex;
     flex-direction: column;
     #logo{
-        display: flex;
-        align-items: center;
+        position:relative;
+       text-align:center;
+       a.back-btn{
+        position:absolute;
+        top:20px;
+        left:20px;
+       }
         }
         #entete_restaurant{
             width:100%;       
@@ -17,6 +22,7 @@
                 }
                 .title{
                     border-radius:60px 60px 0px 0px;
+                    margin-top: -60px;
                 display:flex;
                 height: 100px;
                 width:100%;
@@ -52,12 +58,16 @@
                 li{
                     display:flex;
                     flex-direction:column;
+                    background-color: $color-grey-secondary;
+                    border-radius:15px;
+                    padding:10px;
                     h2{
                         padding-bottom:20px;
                         font-weight: bold;
                         margin-left: 5px;
                         border-bottom:2px solid $color-lien;
                         width:10%;
+                        
                     }                  
                     .carte_plats{
                         display:flex;
@@ -86,7 +96,8 @@
             }
                 .btn{
                     margin: 40px;
-                    background-color: $color-primary-btn;
+                    background: rgb(147,86,220);
+        			background: linear-gradient(357deg, rgba(147,86,220,1) 35%, rgba(255,121,218,1) 100%);
                     border-radius: 25px 25px 25px 25px;
                     color: $color-primary-body;
                     font-size: 18px;
@@ -103,12 +114,16 @@
                          text-align:center;
                             }
                         &:hover{
-                            background-color: lighten($color-primary-btn,5);
-                            opacity:0.8;
+                            
+                                background-color: lighten($color-primary-btn,5);
+                                opacity:0.8;
+                                box-shadow: 5px 3px 8px  darken($color-grey-shadow, 30%)
+                                
+                            }
                             
                         }    
-                  } 
-        }
-    }
+            } 
+  }       
+
    
   

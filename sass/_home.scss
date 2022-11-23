@@ -55,10 +55,11 @@ header{
 			 	 font-size: 16px;		
 			 	 }
 		}
-	&_#exploration{
-		@include main-shadow;
+	#exploration{
+		
 			margin: 40px;
-			background: radial-gradient(circle,#9356DC 80%, $color-secondary-btn 20%);
+			background: rgb(147,86,220);
+			background: linear-gradient(357deg, rgba(147,86,220,1) 35%, rgba(255,121,218,1) 100%);
 			border-radius: 25px 25px 25px 25px;
 			color: $color-primary-body;
 			font-size: 18px;
@@ -73,7 +74,7 @@ header{
 			&:hover{
 				background-color: lighten($color-primary-btn,5);
 				opacity:0.8;
-				box-shadow: 5px 3px 8px  darken(red, 30%)
+				box-shadow: 5px 3px 8px  darken($color-grey-shadow, 30%)
 				
 			}
 			 }
