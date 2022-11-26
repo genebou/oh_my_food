@@ -6,12 +6,15 @@
         #entete_restaurant{
             figure{
                 flex-direction: column-reverse;
+                padding:5px;
                
                 img{
-                    margin-bottom:-800px;
+                    margin-bottom:-1000px;
                 }
                 .title{
                     margin-top: 0px;
+                    justify-content: space-between;
+                    box-shadow: 2px 3px 0px $color-primary-font;
                 }
                 
                   }           
@@ -19,11 +22,26 @@
     } 
 #main_restaurant{
     flex-direction: column-reverse;
+    background-color: $color-primary-body;
     section{
         flex-direction: column;
-        align-content: flex-start;
-                    }
+        align-content: flex-end;
+        background-color: none;     
+               ul{
+             li{
+                box-shadow: 1px 1px 1px $color-primary-font;
+                .carte_plats{
+                    width: 350px;
+                }
+             }
+            }
         }
+    .aside_restaurant{
+        btn{
+            margin:20px;
+        }
+    }
+}
 }
     
 
