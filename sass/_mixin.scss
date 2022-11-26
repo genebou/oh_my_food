@@ -1,3 +1,6 @@
 @mixin main-shadow($color:$color-grey-shadow){
     box-shadow: 5px 3px 8px  darken($color, 10%);
    }
+ @mixin white-shadow($color:$color-primary-body){
+    box-shadow:5px 3px 8px;
+   }

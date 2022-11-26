@@ -5,13 +5,26 @@
     }
         #entete_restaurant{
             figure{
-                flex-direction: row;
+                flex-direction: column-reverse;
                
                 img{
-                    margin-bottom:-200px;
+                    margin-bottom:-800px;
+                }
+                .title{
+                    margin-top: 0px;
                 }
                 
                   }           
              }
     } 
+#main_restaurant{
+    flex-direction: column-reverse;
+    section{
+        flex-direction: column;
+        align-content: flex-start;
+                    }
+        }
 }
+    
+
+

@@ -13,27 +13,28 @@
                  }  	
             }
     }
-section{
-    .fonctionnement ul{
-        width:auto;
+ #main_restaurant{
+    section{
+         .fonctionnement ul{
+         width:auto;
         flex-direction: row;
         flex-wrap: wrap;
          }
-    }   
-aside{
+      }   
+    aside{
     #presentation-restaurants{
         figure{
             flex-direction: row;
-            a{
+                 a{
                 width:150%;
                 img{
-                    border-radius:15px 0px 0px 15px;
-                    
-                }
+                    border-radius:15px 0px 0px 15px;    
+                    }
                 }
              }
          }
     }
+}
 }
 
     

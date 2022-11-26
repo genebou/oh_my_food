@@ -45,6 +45,10 @@
         }
     }
 #main_restaurant{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-grey-secondary;
         section{
             display:flex;
             flex-direction:column;
@@ -94,6 +98,8 @@
                     }
                 }
             }
+        }
+        .aside_restaurant{
                 .btn{
                     margin: 40px;
                     background: rgb(147,86,220);
@@ -123,7 +129,9 @@
                             
                         }    
             } 
-  }       
+        }
+    
+         
 
    
   

@@ -16,6 +16,7 @@
         }
     }
     #main_restaurant{
+        flex-direction:column-reverse;
         section{
             flex-direction:row;
             flex-wrap: wrap;
