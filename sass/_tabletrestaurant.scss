@@ -22,7 +22,10 @@
             flex-wrap: wrap;
             justify-content: space-around;
                 ul{
-                 width: 45%;
+                    flex-direction: row;
+                   background-color: $color-grey-secondary;
+                 width:45%;
+                 
                 }	
              }
          }

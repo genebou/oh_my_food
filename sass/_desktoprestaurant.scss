@@ -28,8 +28,10 @@
         align-content: flex-end;
         background-color: none;     
                ul{
+                border-radius: 15px;
              li{
                 box-shadow: 1px 1px 1px $color-primary-font;
+                width:60%;
                 .carte_plats{
                     width: 350px;
                 }
