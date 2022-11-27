@@ -109,7 +109,7 @@ section {
 					border-radius: 25px;
 					background-color: $color-primary-btn;
 						p{					
-						color: white;
+						color: $color-primary-body;
 						font-size: 20px;
 						width: 100%;
 						text-align: center;
@@ -158,36 +158,34 @@ aside {
   	}
   	
   	#presentation-restaurants{
-			  	
   			figure{
 	  			display: flex;
 				flex-direction: column;
 				margin:20px;
-			
-				@include main-shadow;
-			
-			
-						
+				@include main-shadow;				
 				border-radius: 15px;
+				position:relative;
 				a{
 					width: 100%;
 					color:black;
-					
 					img{
 						width: 100%;
 						border-radius: 15px 15px 0px 0px;
 						object-fit: cover;
-						position: relative;
 						}
-						.nouveau{
+					}
+				.nouveau{
 							position:absolute;
 							top: 20px;
 							right:20px;
-							background-color: #99E2D0;
-							color: darken(#99E2D0, 30%)
+							background-color:$color-tertiaire;
+							color: darken($color-tertiaire, 50%);
+							padding:10px;
+							border-radius: 2px;
+							box-shadow: 1px 1px 1px 1px $color-tertiaire;
 						}
-					}
-					.texte_centrer{
+					
+				.texte_centrer{
 						width:100%;	
 						display:flex;
 						flex-direction: column;	
@@ -209,25 +207,47 @@ aside {
 							flex-direction: row;
 							justify-content:space-between;
 							align-items: center;
-							>.fa-solid{
-								color:$color-primary-btn;
-								font-size: 20px;
-								padding-right: 20px;
-								}
-							>.fa-regular{
-								color:$color-background-footer;
-								font-size: 20px;
-								padding-right:20px;
-								}
-								
-							}
-							
+							.heart {
+								font-size: 40px;
+								position: relative;
+								display: block;
+								width: 40px;
+								height: 40px;
+								i{
+									position: absolute;
+  									top: 0;
+  									left: 0;
+  									width: 100%;
+  									height: 100%;
+  									z-index: 1;
+									.heart-fill{
+										z-index: 2;
+ 										 content: "\F08A";
+  										position: absolute;
+  										scale: 0;
+ 										 transform: scale(0);
+ 										 transition: all 0.2s ease;
+										  .heart i.heart-fill:after {
+											content: "\F08A";
+											color: transparent;
+											position: absolute;
+											top: 0;
+											left: 0;
+											width: 100%;
+											height: 100%;
+											background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+											background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+											background-clip: text;
+											-webkit-background-clip: text;
+										  }
+									}
+								}				 						  							 
+							 }
 						}	
 					}	
-				}
-
-			}
-		
+				}	
+		}
+}
 footer{
 	display:flex;
 	flex-direction: column;
