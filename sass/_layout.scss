@@ -2,7 +2,7 @@
 * {
 	box-sizing: border-box;
 	font-family:roboto,sans-serif;
-	font-size: 14px;	
+	font-size: 16px;	
 }
 
 body{
@@ -18,13 +18,8 @@ main {
 	background-color:$color-primary-body; 
 	h2 {
 		font-weight:bold;
-		 
-		font-size: 20px;
 		  } 
-		  h3{
-			font-size:15px;
-		  }
-		 
+		  
 }	
 
 aside {		
@@ -64,9 +59,10 @@ footer {
 			
 	  		.fa-solid {
 		  		width: 20px;
-	  			margin: 10px 10px 10px 0px;
+	  			margin: 0px 10px 0px;
 	  			color:$color-primary-body;
   			}
+			
 	  	}
   	}
 }

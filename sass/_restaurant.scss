@@ -72,66 +72,43 @@
                         border-bottom:2px solid $color-lien;
                         width:10%;
                         
-                    }                  
-                    .carte_plats{
-                        display:flex;
-                        flex-direction: column;
-                        margin-top:10px;
-                        margin-bottom: 10px;
-                        border-radius: 15px 15px 15px 15px;
-                        background-color: $color-primary-body;
-                        @include main-shadow;
-                        overflow: hidden;
-                        h3{
-                            font-weight:bold;
-                            margin:10px 10px 5px 5px;
-                            max-width: 100%;
-                            overflow: hidden;
-                             white-space: nowrap;
-                             text-overflow: ellipsis;
-                                                }
-                        .carte_plats--details{
-                            display:flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            margin:5px 15px 15px 5px;
-                            p{
-                                max-width: 100%;
-                                overflow: hidden;
-                                white-space: nowrap;
-                                text-overflow: ellipsis;
-                            }
-                            .Price{
-                                font-weight: bold;
-                                width:10%;
+                    }                                      
+                }
+            }                            
+        }
 
-                            }
-                            .menu-icon {  
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                width: 10%;
-                                height: 100%;
-                                transition: margin-right 1s;
-                                margin-right: -20%;
-                                background-color: #99e2d0;
-                                color: white;  
-                                border-top-right-radius: 10px;
-                                border-bottom-right-radius: 10px;     
-                              .menu-item:hover .menu-icon {
-                                transition: all 1s;
-                                margin-right: 0%;
-                              
-                                     .menu-item:hover .menu-icon i {
-                                    transition: all 1s .5s;
-                                     transform: rotate(360deg);
-                              }
-                        }
-                    }
+        .carte_plats {
+            display:flex;
+            align-items: center;
+            margin: 10px auto;
+            border-radius: 15px;
+            background-color: $color-primary-body;
+            
+            @include main-shadow;
+            overflow: hidden;                        
+            .carte_plats--details {
+                width: 65%;
+                margin:5px 15px;
+                
+                h3 {
+                    font-weight:bold;
+                    margin:10px;
+                    max-width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
+                p {
+                    max-width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }                            
             }
-                }
-            }
+            .price{                        
+                width:35%;
+                font-weight: bold;                            
+            }                            
         }
 
         .aside_restaurant{

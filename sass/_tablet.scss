@@ -1,11 +1,20 @@
-@media only screen and (min-width: 768px){ /*tablet*/	
-	header{
+@media only screen and (min-width: 768px){ 
+    /*tablet*/
+    	header{
+            h2{
+                font-size:26px;
+            }
+            p{
+                font-size:20px;
+            }
+        }
+        header{
         #entete{
         width: 100%;
             
              #exploration{
                  width:50%;
-                margin:0px;
+                
                     p{
                      text-align: center;
                   }
@@ -13,29 +22,53 @@
                  }  	
             }
     }
- #main_restaurant{
-    section{
-         .fonctionnement ul{
-         width:auto;
-        flex-direction: row;
-        flex-wrap: wrap;
+    main{
+        h2{
+            font-size:26px;
+        }
+    }
+
+ section{       
+         .fonctionnement{
+            h2{
+                font-size:26px;
+            }
+          ul{
+         margin:5px 200px;
+         li{
+            font-size:20px;
          }
-      }   
-    aside{
+               
+         }
+      }
+    }   
+aside{
+    h3{
+        font-size:22px;
+        font-weight: bold;
+    }
+    p{
+        font-size:22px;
+    }
     #presentation-restaurants{
         figure{
-            flex-direction: row;
+            flex-direction: column;
                  a{
-                width:150%;
+                width:100%;
                 img{
-                    border-radius:15px 0px 0px 15px;    
+                    border-radius:15px;    
+                    }
+                    texte_centrer{
+                        h3{
+                            font-size:26px;
+                        }
                     }
                 }
              }
          }
     }
 }
-}
+
 
     
 
