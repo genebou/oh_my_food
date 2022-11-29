@@ -83,7 +83,7 @@
             margin: 10px auto;
             border-radius: 15px;
             background-color: $color-primary-body;
-            
+            width:100%;            
             @include main-shadow;
             overflow: hidden;                        
             .carte_plats--details {

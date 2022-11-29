@@ -5,16 +5,16 @@
     }
         #entete_restaurant{
             figure{
-                flex-direction: column-reverse;
+                flex-direction: column;
                 padding:5px;
                
                 img{
-                    margin-bottom:-1000px;
+                    margin-bottom:0px;
+                    height:300px;
+                    width: auto;
                 }
                 .title{
                     margin-top: 0px;
-                    justify-content: space-between;
-                    box-shadow: 2px 3px 0px $color-primary-font;
                 }
                 
                   }           
@@ -24,14 +24,14 @@
     flex-direction: column-reverse;
     background-color: $color-primary-body;
     section{
-        flex-direction: column;
-        align-content: flex-end;
-        background-color: none;     
+        background-color: none;  
+        flex-wrap: nowrap; 
+        margin:0px;  
                ul{
                 border-radius: 15px;
+                width:100%;
              li{
-                box-shadow: 1px 1px 1px $color-primary-font;
-                width:60%;
+               
                 .carte_plats{
                     width: 350px;
                 }
