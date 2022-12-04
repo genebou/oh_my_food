@@ -1,24 +1,24 @@
 @media only screen and (min-width: 968px){ /*desktop*/
 header{	  
 #entete{
-       flex-direction: row;
+       flex-direction: column;
        background-color: white;
-       padding-left:20px;
-       padding-right:20px;
+       
         #position{
-        width:35%;
-        border-radius:25px;
-        margin-bottom: -200px;
+        width:100%;
+        border-radius:0px;
+        margin-bottom: 0px;
         }
          #exploration{
         width:35%;
         height:45px;
-        margin-bottom:-160px;
+        margin-bottom:0px;
+        border-radius:15px;
          }
     }
  }
 section {
-    margin-top:100px;
+    margin-top:50px;
         .fonctionnement{
             background-color: $color-primary-body;
             margin-bottom:20px;

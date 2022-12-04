@@ -27,7 +27,8 @@
                 height: 100px;
                 width:100%;
                 background-color: $color-grey-secondary;
-                justify-content: space-evenly;
+                justify-content: space-around;
+                align-items: center;
                 padding:25px;
                 font-family: shrikhand;
                 font-weight: bold;
@@ -53,13 +54,13 @@
             display:flex;
             flex-direction:column;
             align-items: center;
-            
-            
+            width:100%;
+            margin-bottom: 0px;          
             ul{
                 display:flex;
                 flex-direction:column;
-                padding:10px;
-                width:100%;
+                background-color: none;
+                width:90%;
                 
                 li{
                     display:flex;
@@ -110,6 +111,7 @@
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
+                    margin:10px;
                 }                            
             }
             .price{                        

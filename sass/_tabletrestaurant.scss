@@ -18,12 +18,14 @@
     #main_restaurant{
         flex-direction:column-reverse;
         section{
-            flex-direction:row;
-            flex-wrap: wrap;
+            flex-direction:column;
             justify-content: space-around;
+            width:80%;
                 ul{
                     flex-direction: row;
-                 width:45%;
+                 li{
+                    width:100%;
+                 }
                  
                 }	
              }
