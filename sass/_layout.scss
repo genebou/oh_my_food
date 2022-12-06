@@ -4,38 +4,6 @@
 	font-family:roboto,sans-serif;
 	font-size: 16px;	
 }
-$cd-bar: #15DEA5;
-$size: 3vh;
-$num-bar:5;
-$anim-dur:1000ms;
-
-
-.load {
-    width: $size*10;
-    height: $size*7.5;
-    display: flex;
-    justify-content: space-evenly;
-    &__bar {
-        background-color: #15DEA5;
-        height: 100%;
-        width: $size;
-		animation: bar $anim-dur;
-		
-		}
-    
-	@keyframes bar {
-		0% {
-			transform: scaleY(0.5);
-		}
-		30%{
-			transform: scaleY(0.75);
-		}
-		100% {
-			transform: scaleY(0.0);
-		}
-	}
-}
-
 body{
 	background-color:$color-primary-body;
 }

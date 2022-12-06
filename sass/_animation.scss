@@ -23,6 +23,7 @@
 	width: 30px;
 	height: 30px;
 	color:$color-background-footer;
+	font-weight: lighter;
 	i {
 		position: absolute;
 		top: 0;
@@ -90,4 +91,52 @@
         transition: all 1s .5s;
         transform: rotate(360deg);
   	}
+}
+.load {
+		
+		display: flex;
+		justify-content: space-evenly;
+	position: fixed;
+    height: 100%;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(#9256dc, #ff79da);
+    align-items: center;
+    flex-direction: row;
+    animation: opacity0 4s forwards;
+    z-index: 9999;
+	animation-name: bar;
+	&__bar {
+		background-color: $color-tertiaire;
+		height: 100%;
+		animation: bar duration;
+		
+	}
+	@keyframes bar {
+		0% {
+			transform: scaleY(0.5);
+		}
+		30%{
+			transform: scaleY(0.75);
+		}
+		100% {
+			transform: scaleY(0.0);
+		}
+	}
+	.load_bar{
+		margin: 15px;
+    border-radius: 10%;
+    height: 30px;
+    width: 30px;
+    background: $color-tertiaire;
+    box-shadow: 10px 10px 15px #ff79da, -10px -10px 30px #9256dc, inset -10px -10px 20px #9256dc, inset 5px 5px 10px #ff79da;
+    animation-duration: 1.5s;
+    animation-name: bar-animation;
+    animation-iteration-count: infinite;
+	}
+	load_bar:nth-of-type(1){
+		animation-delay:0.2s;
+	}
+
 }
