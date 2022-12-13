@@ -1,260 +1,211 @@
 
-#main-restaurant{
-			ul{
-					li{
-												
-					 #entrees {
-						animation-delay:0.1s;
-						animation-duration: 2s;
-    					animation-name: glissement;
-    					animation-iteration-count: 1;
-    					opacity:1;
-    					animation-fill-mode: forwards;
-						transition: all 0.3s ease-out;
-						@keyframes glissement{
-							0%{
-								opacity:0;
-								transform: scaleX(0.0);
-							}
-							50%{
-								opacity:0.9;
-								transform: scaleX(0.18);
-							}
-							90%{
-								opacity:0.9;
-								transform: scaleX(0.81);
-							}
-							100%{
-							opacity:1;
-							transform: scaleX(1);
-							}
-						}
-						
-			  		 }
-					   
-					  #plats {
-						animation-delay:0.3s;
-						animation-duration: 3s;
-    					animation-name: glissement1;
-    					animation-iteration-count: 1;
-    					opacity:1;
-    					animation-fill-mode: forwards;
-						@keyframes glissement1{
-							0%{
-								opacity:0;
-								transform: scaleX(0.0);
-							}
-							50%{
-								opacity:0;
-								transform: scaleX(0.0);
-							}
-							90%{
-								opacity:0.9;
-								transform: scaleX(0.5);
-							}
-							100%{
-							opacity:1;
-							transform: scaleX(1.0);
-							}
-						}
-					 }
-					  #desserts {
-						animation-delay:0.5s;
-						animation-duration: 4s;
-    					animation-name: glissement3;
-    					animation-iteration-count: 1;
-    					opacity:1;
-    					animation-fill-mode: forwards;
-						@keyframes glissement3{
-							0%{
-								opacity:0;
-								transform: scaleX(0.0);
-							}
-							50%{
-								opacity:0.9;
-								transform: scaleX(0.0);
-							}
-							90%{
-								opacity:0.9;
-								transform: scaleX(0.0);
-							}
-							100%{
-							opacity:1;
-							transform: scaleX(1.0);
-							}
-						}
-						
-				   }
-					
-					 }
-				}
-
+	@for $i from 1 through 3 {
+		.menu:nth-child(#{$i} n) {
+		animation-delay: #{$i * 0.6}s;
 		}
-	
-	
-			.carte_plats{
-				animation-duration: 2s;
-    			animation-name: glissements;
-    			animation-iteration-count: 1;
-    			opacity:0.5;
-    			animation-fill-mode: forwards;
-				transition: all 0.3s ease-out;
-				@keyframes glissements{
-					0%{
-						opacity:0;
-					}
-					50%{
-						opacity:0.5;
-					}
-					90%{
-						opacity:0.9;
-					}
-					100%{
-					opacity:1;
-					}
+	}
+
+	.menu{
+		animation-duration: 2s;
+		animation-name: menu;
+		animation-iteration-count: 1;
+		animation-direction:normal;
+		animation-fill-mode:backwards;
+		transition: all 0.1s ease-out;
+	}
+	@keyframes menu{
+		0%{
+			opacity:0;
+		}
+		50%{
+			opacity:0.5;
 				}
+		90%{
+			opacity:0.9;
+		}
+		100%{
+			opacity:1;
+		}
+	}
+	
+	@for $i from 1 through 9 {
+		.carte_plats:nth-child(#{$i}n) {
+		animation-delay: #{$i * 0.3}s;
+		}
+	}			
+
+	.carte_plats{
+		animation-duration: 4s;
+		animation-name: glissements;
+		animation-iteration-count: 1;
+		
+		opacity:0.5;
+		animation-direction:normal;
+		animation-fill-mode: forwards;
+		transition: all 0.3s ease-out;
+		animation-timeline:unset;
+		@keyframes glissements{
+			0%{
+				opacity:0;
 			}
+			50%{
+				opacity:0,5;
+			}
+			90%{
+				opacity:0.9;
+			}
+			100%{
+			opacity:1;
+			}
+		}
+	}
 .heart {
-	font-size: 30px;
-	position: relative;
-	display: block;
-	width: 30px;
-	height: 30px;
-	color:$color-background-footer;
-	font-weight: lighter;
-	i {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-	}
-	i.heart-fill {
-		z-index: 2;
-		content: "\F08A";
-		position: absolute;
-		scale: 0;
-		transform: scale(0);
-		transition: all 1 0.2s ease;		
-	}
-	i.heart-fill:after {
-		content: "\F08A";
-		color: transparent;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-image: linear-gradient(to bottom, #ff79da, #9356dc);
-		background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-		background-clip: text;
-		-webkit-background-clip: text;
-	}
+font-size: 30px;
+position: relative;
+display: block;
+width: 30px;
+height: 30px;
+color:$color-background-footer;
+font-weight: lighter;
+i {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+}
+i.heart-fill {
+z-index: 2;
+content: "\F08A";
+position: absolute;
+scale: 0;
+transform: scale(0);
+transition: all 1 0.2s ease;		
+}
+i.heart-fill:after {
+content: "\F08A";
+color: transparent;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+background-clip: text;
+-webkit-background-clip: text;
+}
 }
 
 .heart:hover i.heart-fill {
-  	scale: 1;
-  	transform: scale(1);    
+scale: 1;
+transform: scale(1);    
 }
 /* Rotating checkmark */
 
 
-		.carte_plats {
-			.menu-icon {  
-	   			 display: flex;
-	   			 justify-content: center;
-	    		align-items: center;
-	   			 width:20%;
-				height: 100%;
-	   			 transition: margin-right 1s;
-	    		margin-right: -20%;
-	   			 background-color: #99e2d0;
-	   			 color: white;  
-	   			 border-top-right-radius: 10px;
-	    		border-bottom-right-radius: 10px;     
-			}
-		}
-		.carte_plats:hover {
-			.price {
-    		transition: all 1s;
-    		width: 15%;    	
-    		}
-   		 .menu-icon {
-    		transition: all 1s;
-    		margin-right: 0%;
-   		 }
-  			i {
-      	  transition: all 1s .5s;
-       		 transform: rotate(360deg);
-  		}
-		}
-	
-
-
-.overlay {
-	@keyframes bar-animation{
-		0% {
-			transform: scaleY(0.5);
-		}
-		30%{
-			transform: scaleY(1);
-		}
-		100% {
-			transform: scaleY(0.0);
-		}
-	}
-	@keyframes opacity0{
-		0%{
-			opacity:1;
-					}
-		90%{
-			opacity:1;
-		}
-		100%{
-			opacity:0;
-			z-index: -3;
-		}
-	}
-		
-	display: flex;
-	justify-content: space-evenly;
-	position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0px;
-    left: 0px;
-    background-color: white;
-    align-items: center;
-    flex-direction: row;
-    animation: opacity0 4s forwards;
-    z-index: 9999;
-	animation-name: opacity0;
-	
-	.load_bar{
-		margin: 15px;
-    border-radius: 10%;
-    height: 30px;
-	width:30px;
-    background-color: $color-tertiaire;
-	color: white;
-    box-shadow: 10px 10px 15px #ff79da, -10px -10px 30px #9256dc, inset -10px -10px 20px #9256dc, inset 5px 5px 10px #ff79da;
-    animation-duration: 1.5s;
-    animation-name: bar-animation;
-    animation-iteration-count: infinite;
-	 .fa-regular fa-plate-ustensils {
-		color:black;
-
-	 }
-		}
-	load_bar:nth-of-type(1){
-		animation-delay:0.2s;
-	}
-	&__bar {
-		background-color:$color-background-footer;
+.carte_plats {
+	.menu-icon {  
+			display: flex;
+			justify-content: center;
+		align-items: center;
+			width:20%;
 		height: 100%;
-		animation: bar-animation;
-		
+			transition: margin-right 1s;
+		margin-right: -20%;
+			background-color: #99e2d0;
+			color: white;  
+			border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;     
 	}
-
 }
+.carte_plats:hover {
+	.price {
+	transition: all 1s;
+	width: 15%;    	
+	}
+	.menu-icon {
+	transition: all 1s;
+	margin-right: 0%;
+	}
+	  i {
+	transition: all 1s .5s;
+		transform: rotate(360deg);
+  }
+}
+
+
+/* Animations au chargement */
+
+
+@keyframes loadingoverlay{
+0%{
+opacity:1;
+transform: scale(1);
+}
+90%{
+opacity:1;		
+}
+99% {
+transform: scale(1);
+}
+100%{
+opacity:0;
+transform: scale(0);
+z-index: -1;
+}
+}
+
+@keyframes loadingdots {
+0% {
+opacity: 0;
+}
+50% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+@for $i from 1 through 5 {
+.utensils:nth-child(#{$i}n) {
+animation-delay: #{$i * 0.2}s;
+}
+}
+
+.overlay {	
+display: flex;
+justify-content: space-evenly;
+position: fixed;
+height: 100vh;
+width: 100vw;
+top: 0px;
+left: 0px;
+background-color: white;
+align-items: center;
+flex-direction: row;
+z-index: 999;
+animation: loadingoverlay 4s forwards;
+
+.utensils{
+z-index: 1000;
+margin: 15px;
+border-radius: 10%;
+height: 30px;
+width:30px;
+background-color: $color-tertiaire;
+color: white;
+box-shadow: 10px 10px 15px #ff79da, -10px -10px 30px #9256dc, inset -10px -10px 20px #9256dc, inset 5px 5px 10px #ff79da;
+
+animation-duration: 1s;
+animation-name: loadingdots;
+animation-iteration-count: 5;	 	 	 	
+
+.fa-regular fa-plate-ustensils {
+	color:black;			
+ }		
+}		
+}
+

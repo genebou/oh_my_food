@@ -1,6 +1,6 @@
 @media only screen and (min-width: 768px){ 
-    #header_restaurant{
-        #entete_restaurant{
+    .header_restaurant{
+        .entete_restaurant{
             figure{
                 img{
                     margin: 20px;
@@ -15,7 +15,7 @@
             }
         }
     }
-    #main_restaurant{
+    .main_restaurant{
         flex-direction:column-reverse;
         section{
             flex-direction:column;

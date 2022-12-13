@@ -1,9 +1,9 @@
 @media only screen and (min-width: 968px){
-#header_restaurant{
-    #logo{
+.header_restaurant{
+    .logo{
         justify-content: space-between;
     }
-        #entete_restaurant{
+        .entete_restaurant{
             figure{
                 flex-direction: column;
                 padding:5px;
@@ -22,7 +22,7 @@
              }           
              }
     } 
-#main_restaurant{
+.main_restaurant{
     flex-direction: column-reverse;
     background-color: $color-primary-body;
     section{
