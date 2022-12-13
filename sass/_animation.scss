@@ -1,21 +1,119 @@
-.carte_plats{
-	animation-duration: 2s;
-    animation-name: glissement;
-    animation-iteration-count: 1;
-    opacity:0.5;
-    animation-fill-mode: forwards;
-	@keyframes glissement{
-		0%{
-			opacity:0;
+
+#main-restaurant{
+			ul{
+					li{
+												
+					 #entrees {
+						animation-delay:0.1s;
+						animation-duration: 2s;
+    					animation-name: glissement;
+    					animation-iteration-count: 1;
+    					opacity:1;
+    					animation-fill-mode: forwards;
+						transition: all 0.3s ease-out;
+						@keyframes glissement{
+							0%{
+								opacity:0;
+								transform: scaleX(0.0);
+							}
+							50%{
+								opacity:0.9;
+								transform: scaleX(0.18);
+							}
+							90%{
+								opacity:0.9;
+								transform: scaleX(0.81);
+							}
+							100%{
+							opacity:1;
+							transform: scaleX(1);
+							}
+						}
+						
+			  		 }
+					   
+					  #plats {
+						animation-delay:0.3s;
+						animation-duration: 3s;
+    					animation-name: glissement1;
+    					animation-iteration-count: 1;
+    					opacity:1;
+    					animation-fill-mode: forwards;
+						@keyframes glissement1{
+							0%{
+								opacity:0;
+								transform: scaleX(0.0);
+							}
+							50%{
+								opacity:0;
+								transform: scaleX(0.0);
+							}
+							90%{
+								opacity:0.9;
+								transform: scaleX(0.5);
+							}
+							100%{
+							opacity:1;
+							transform: scaleX(1.0);
+							}
+						}
+					 }
+					  #desserts {
+						animation-delay:0.5s;
+						animation-duration: 4s;
+    					animation-name: glissement3;
+    					animation-iteration-count: 1;
+    					opacity:1;
+    					animation-fill-mode: forwards;
+						@keyframes glissement3{
+							0%{
+								opacity:0;
+								transform: scaleX(0.0);
+							}
+							50%{
+								opacity:0.9;
+								transform: scaleX(0.0);
+							}
+							90%{
+								opacity:0.9;
+								transform: scaleX(0.0);
+							}
+							100%{
+							opacity:1;
+							transform: scaleX(1.0);
+							}
+						}
+						
+				   }
+					
+					 }
+				}
+
 		}
-		50%{
-			opacity:0.5;
-		}
-		100%{
-			opacity:1;
-		}
-	}
-}
+	
+	
+			.carte_plats{
+				animation-duration: 2s;
+    			animation-name: glissements;
+    			animation-iteration-count: 1;
+    			opacity:0.5;
+    			animation-fill-mode: forwards;
+				transition: all 0.3s ease-out;
+				@keyframes glissements{
+					0%{
+						opacity:0;
+					}
+					50%{
+						opacity:0.5;
+					}
+					90%{
+						opacity:0.9;
+					}
+					100%{
+					opacity:1;
+					}
+				}
+			}
 .heart {
 	font-size: 30px;
 	position: relative;
@@ -38,7 +136,7 @@
 		position: absolute;
 		scale: 0;
 		transform: scale(0);
-		transition: all 0.2s ease;		
+		transition: all 1 0.2s ease;		
 	}
 	i.heart-fill:after {
 		content: "\F08A";
@@ -62,81 +160,101 @@
 /* Rotating checkmark */
 
 
-.carte_plats {
-	.menu-icon {  
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-	    width:20%;
-		height: 100%;
-	    transition: margin-right 1s;
-	    margin-right: -20%;
-	    background-color: #99e2d0;
-	    color: white;  
-	    border-top-right-radius: 10px;
-	    border-bottom-right-radius: 10px;     
-	}
-}
+		.carte_plats {
+			.menu-icon {  
+	   			 display: flex;
+	   			 justify-content: center;
+	    		align-items: center;
+	   			 width:20%;
+				height: 100%;
+	   			 transition: margin-right 1s;
+	    		margin-right: -20%;
+	   			 background-color: #99e2d0;
+	   			 color: white;  
+	   			 border-top-right-radius: 10px;
+	    		border-bottom-right-radius: 10px;     
+			}
+		}
+		.carte_plats:hover {
+			.price {
+    		transition: all 1s;
+    		width: 15%;    	
+    		}
+   		 .menu-icon {
+    		transition: all 1s;
+    		margin-right: 0%;
+   		 }
+  			i {
+      	  transition: all 1s .5s;
+       		 transform: rotate(360deg);
+  		}
+		}
+	
 
-.carte_plats:hover {
-	.price {
-    	transition: all 1s;
-    	width: 15%;    	
-    }
-    .menu-icon {
-    	transition: all 1s;
-    	margin-right: 0%;
-    }
-  	i {
-        transition: all 1s .5s;
-        transform: rotate(360deg);
-  	}
-}
-.load {
-		
-		display: flex;
-		justify-content: space-evenly;
-	position: fixed;
-    height: 100%;
-    width: 100vw;
-    top: 0px;
-    left: 0px;
-    background: linear-gradient(#9256dc, #ff79da);
-    align-items: center;
-    flex-direction: row;
-    animation: opacity0 4s forwards;
-    z-index: 9999;
-	animation-name: bar;
-	&__bar {
-		background-color: $color-tertiaire;
-		height: 100%;
-		animation: bar duration;
-		
-	}
-	@keyframes bar {
+
+.overlay {
+	@keyframes bar-animation{
 		0% {
 			transform: scaleY(0.5);
 		}
 		30%{
-			transform: scaleY(0.75);
+			transform: scaleY(1);
 		}
 		100% {
 			transform: scaleY(0.0);
 		}
 	}
+	@keyframes opacity0{
+		0%{
+			opacity:1;
+					}
+		90%{
+			opacity:1;
+		}
+		100%{
+			opacity:0;
+			z-index: -3;
+		}
+	}
+		
+	display: flex;
+	justify-content: space-evenly;
+	position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    align-items: center;
+    flex-direction: row;
+    animation: opacity0 4s forwards;
+    z-index: 9999;
+	animation-name: opacity0;
+	
 	.load_bar{
 		margin: 15px;
     border-radius: 10%;
     height: 30px;
-    width: 30px;
-    background: $color-tertiaire;
+	width:30px;
+    background-color: $color-tertiaire;
+	color: white;
     box-shadow: 10px 10px 15px #ff79da, -10px -10px 30px #9256dc, inset -10px -10px 20px #9256dc, inset 5px 5px 10px #ff79da;
     animation-duration: 1.5s;
     animation-name: bar-animation;
     animation-iteration-count: infinite;
-	}
+	 .fa-regular fa-plate-ustensils {
+		color:black;
+
+	 }
+		}
 	load_bar:nth-of-type(1){
 		animation-delay:0.2s;
+	}
+	&__bar {
+		background-color:$color-background-footer;
+		height: 100%;
+		animation: bar-animation;
+		
 	}
 
 }

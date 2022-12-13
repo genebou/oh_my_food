@@ -30,13 +30,13 @@
                 justify-content: space-around;
                 align-items: center;
                 padding:25px;
-                font-family: shrikhand;
                 font-weight: bold;
-                font-style: italic;
+                font-style: normal;
                 font-size: 25px;              
                 h1{                    
                     border-radius:25px; 
-                    align-self: center;                                     
+                    align-self: center;  
+                    font-family:"shrikland", cursive;                                   
                 }
                 .fa-regular {
                     align-self: center;
@@ -79,10 +79,9 @@
                 }
             }                            
         }
-           .carte_plats:nth-of-type(n+1){
-            animation-delay:0.1s;
-           }
-        .carte_plats {
+           
+        .carte_plats{
+            
             display:flex;
             align-items: center;
             margin: 10px auto;
@@ -119,6 +118,7 @@
                 font-weight: bold;                            
             }                            
         }
+    }
 
         .aside_restaurant{
                 .btn{
@@ -150,7 +150,7 @@
                             
                         }    
             } 
-        }
+        
     
          
 
