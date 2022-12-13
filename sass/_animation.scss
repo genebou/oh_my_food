@@ -1,7 +1,7 @@
 
 	@for $i from 1 through 3 {
 		.menu:nth-child(#{$i} n) {
-		animation-delay: #{$i * 0.6}s;
+		animation-delay: #{$i * 0.8}s;
 		}
 	}
 
@@ -10,18 +10,19 @@
 		animation-name: menu;
 		animation-iteration-count: 1;
 		animation-direction:normal;
-		animation-fill-mode:backwards;
-		transition: all 0.1s ease-out;
+		animation-fill-mode:both;
+		transition: all 0.3s ease-out;
+		animation-timeline:unset;
 	}
 	@keyframes menu{
 		0%{
 			opacity:0;
 		}
 		50%{
-			opacity:0.5;
+			opacity:0;
 				}
 		90%{
-			opacity:0.9;
+			opacity:0;
 		}
 		100%{
 			opacity:1;
@@ -30,7 +31,7 @@
 	
 	@for $i from 1 through 9 {
 		.carte_plats:nth-child(#{$i}n) {
-		animation-delay: #{$i * 0.3}s;
+		animation-delay: #{$i * 0.4}s;
 		}
 	}			
 
@@ -43,19 +44,22 @@
 		animation-direction:normal;
 		animation-fill-mode: forwards;
 		transition: all 0.3s ease-out;
-		animation-timeline:unset;
 		@keyframes glissements{
 			0%{
-				opacity:0;
+				opacity:0.8;
+				transform:translateY(10px) ;
+				@include main-shadow-animation;
+				
 			}
 			50%{
-				opacity:0,5;
-			}
-			90%{
 				opacity:0.9;
+				transform:translateY(7px);
+				@include main-shadow-animation;
+				
 			}
 			100%{
 			opacity:1;
+			transform:translateY(0px);
 			}
 		}
 	}

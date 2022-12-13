@@ -4,3 +4,6 @@
  @mixin white-shadow($color:$color-primary-body){
     box-shadow:5px 3px 8px;
    }
+   @mixin main-shadow-animation($color:$color-grey-shadow){
+    box-shadow: 5px 3px 9px  darken($color, 80%);
+   }
