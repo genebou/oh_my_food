@@ -78,7 +78,7 @@ font-weight: lighter;
 	content: "\F08A";
 	position: absolute;
 	transform: scale(0);
-	scale: 0;
+	
 	transition: all 0.2s ease;		
 	}
 	i.heart-fill:after {
@@ -98,7 +98,7 @@ font-weight: lighter;
 .heart:hover i.heart-fill {
 	
 	transform: scale(1);
-	scale:1;    
+	   
 }
 /* Rotating checkmark */
 .carte_plats {

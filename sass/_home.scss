@@ -78,9 +78,9 @@
 				transition: opacity 250ms;
 				
 			&:hover{
-				background-color: lighten($color-primary-btn,5);
+				background-color: lighten($color-primary-btn,5%);
 				opacity:0.8;
-				box-shadow: 5px 3px 8px  darken($color-grey-shadow, 30%)
+				box-shadow: 5px 3px 8px  darken($color-grey-shadow, 30%);
 				
 			}
 			 }
@@ -109,6 +109,13 @@ section {
 	  			border-radius: 60px;
 				background-color: $color-grey-secondary;
 				@include main-shadow;
+				&:hover{
+					background-color: lighten($color-primary-btn,22%);
+					opacity:0.8;
+					box-shadow: 5px 3px 8px  darken($color-primary-btn, 30%);
+					color:darken($color-primary-btn,30%);
+					
+				}
 				
 				  .fonctionnement-numero {
 					width: 20px;
@@ -130,11 +137,12 @@ section {
 					padding-left: 10px;
 					margin: 20px;
 					align-items: center;
+					
 					.fonctionnement-text{
 						text-align: center;
 						a{
 						color:black;
-				  }	
+					  }	
 				}
 				  .fonctionnement-ico{
 					width:20px;
@@ -142,6 +150,7 @@ section {
 					color:$color-background-footer;
 					:hover{
 						color:$color-primary-btn;
+						font-weight: bold;
 					}
 					
 				  }	
@@ -198,7 +207,7 @@ aside {
 							top: 20px;
 							right:20px;
 							background-color:$color-tertiaire;
-							color: darken($color-tertiaire, 50%);
+							color:darken($color-tertiaire, 50%);
 							padding:10px;
 							border-radius: 2px;
 							box-shadow: 1px 1px 1px 1px $color-tertiaire;
