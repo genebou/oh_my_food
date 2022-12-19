@@ -1,18 +1,19 @@
 
-	@for $i from 1 through 3 {
+	@for $i from 2 through 3 {
 		.menu:nth-child(#{$i} n) {
-		animation-delay: #{$i * 0.8}s;
+		animation-delay: #{$i * 0.9}s;
 		}
 	}
 
 	.menu{
-		animation-duration: 2s;
+		animation-duration: 1.5s;
 		animation-name: menu;
 		animation-iteration-count: 1;
 		animation-direction:normal;
 		animation-fill-mode:both;
-		transition: all 0.3s ease-out;
-		animation-timeline:unset;
+		transition: all 0.3s ease-in;
+		
+		opacity:0.5;
 	}
 	@keyframes menu{
 		0%{
