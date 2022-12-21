@@ -2,19 +2,18 @@
 header{	  
 #entete{
        flex-direction: column;
-              
-        #position{
-        width:100%;
-        border-radius:0px;
-        margin-bottom: 0px;
+            #position{
+            width:100%;
+            border-radius:0px;
+            margin-bottom: 0px;
+            }
+            #exploration{
+            width:35%;
+            height:45px;
+            border-radius:15px;
+            }
         }
-         #exploration{
-        width:35%;
-        height:45px;
-        border-radius:15px;
-         }
     }
- }
 section {
     margin-top:50px;
         .fonctionnement{
@@ -25,20 +24,19 @@ section {
             padding-left:20px;
             padding-top:20px;
             padding-bottom:20px;
-             }
+            }
             ul{
             flex-direction: row;
              justify-content: space-evenly;
             width:100%;
             background-color: white;
             margin:0px;
-             }
+            }
         }
-}
+    }
 aside{
   padding-top:0px;
-    
-#presentation-restaurants{
+        #presentation-restaurants{
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -46,14 +44,13 @@ aside{
         background-color: $color-primary-body;
         margin:20px;
         border-radius:15px;
-        
             figure{
                 width:35%;     
                a img{
-            height:200px;
-             }
-         }
-     }
+                height:200px;
+                }
+            }
+        }
     }
 }
 

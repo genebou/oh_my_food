@@ -7,20 +7,15 @@
 body{
 	background-color:$color-primary-body;
 }
-
 .page {
 	max-width: 1440px;
-	
 }
-
 main {
 	background-color:$color-primary-body; 
 	h2 {
 		font-weight:bold;
-		  } 
-		  
+	} 
 }	
-
 aside {		
 	figure{
 		@include main-shadow;
@@ -47,23 +42,19 @@ footer {
 		color:$color-primary-body;
 	}
 	ul{
-		display:flex;
-		padding-left:20px;
-			  	li {
+	display:flex;
+	padding-left:20px;
+		li {
 	  		display: flex;
 	  		padding: 20px 2px 2px 10px;
 	  		align-items: center;
 	  		justify-items: stretch;
 			width:100%;
-	  		
-			
-	  		.fa-solid {
+			.fa-solid {
 		  		width: 20px;
 	  			margin: 0px 10px 0px  0px;
 	  			color:$color-primary-body;
   			}
-			
-	  	}
+		}
   	}
-
 }	

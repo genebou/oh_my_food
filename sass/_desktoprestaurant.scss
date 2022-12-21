@@ -7,7 +7,6 @@
             figure{
                 flex-direction: column;
                 padding:5px;
-               
                 img{
                     margin-bottom:0px;
                     height:350px;
@@ -20,37 +19,33 @@
                     justify-content: space-around;
                     flex-direction: column;
                 }     
-             }           
-             }
+            }             
+        }
     } 
-.main_restaurant{
-    flex-direction: column-reverse;
-    background-color: $color-primary-body;
-    section{
-        background-color:rgba(244, 244, 244, 0.5);
-        width:100%;
-     
-        flex-wrap: nowrap; 
-        margin:0px;  
-               ul{
+    .main_restaurant{
+        flex-direction: column-reverse;
+        background-color: $color-primary-body;
+        section{
+            background-color:rgba(244, 244, 244, 0.5);
+            width:100%;
+            flex-wrap: nowrap; 
+            margin:0px;  
+            ul{
                 border-radius: 15px;
                 width:60%;
-             li{
-               
-                .carte_plats{
-                    width: 100%;
+                li{               
+                    .carte_plats{
+                     width: 100%;
+                    }
                 }
-             }
             }
         }
-    .aside_restaurant{
-        .btn{
-            margin:20px;
+        .aside_restaurant{
+            .btn{
+                margin:20px;
+            }
         }
     }
-}
-
-
 }
 
 

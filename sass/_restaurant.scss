@@ -2,27 +2,26 @@
     display:flex;
     flex-direction: column;
     .logo{
-        position:relative;
+       position:relative;
        text-align:center;
        a.back-btn{
         position:absolute;
         top:20px;
         left:20px;
        }
-        }
-        .entete_restaurant{
-            width:100%;       
-            figure{
-                display:flex;
-                flex-direction: column;
-                align-items: center;
-                background-image: url();               
-                img{
-                    width:100%;
-                }
-                .title{
-                    border-radius:60px 60px 0px 0px;
-                    margin-top: -60px;
+    }
+    .entete_restaurant{
+        width:100%;       
+        figure{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url();               
+            img{
+                width:100%;
+            }
+            .title{
+                margin-top: -60px;
                 display:flex;
                 height: 100px;
                 width:100%;
@@ -42,119 +41,109 @@
                 .fa-regular {
                     align-self: center;
                 }
-                 }
-             }
+            }
         }
     }
+}
 .main_restaurant{
     display:flex;
     flex-direction: column;
     align-items: center;
     background-color: $color-grey-secondary;
-        section{
+    section{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        width:100%;
+        margin-bottom: 0px;          
+        ul{
             display:flex;
             flex-direction:column;
-            align-items: center;
-            width:100%;
-            margin-bottom: 0px;          
-            ul{
+            width:90%;    
+            li{
                 display:flex;
                 flex-direction:column;
-                width:90%;    
-                li{
-                    display:flex;
-                    flex-direction:column;
-                    background-color: $color-grey-secondary;
-                    border-radius:15px;
-                    padding:10px;
-                        h2{
-                        padding-bottom:20px;
-                        font-weight: bold;
-                        margin-left: 5px;
-                        border-bottom:2px solid $color-lien;
-                        width:10%;
-                        text-transform:uppercase;  
-                        
-                    }                                      
-                }
+                background-color: $color-grey-secondary;
+                border-radius:15px;
+                padding:10px;
+                h2{
+                    padding-bottom:20px;
+                    font-weight: bold;
+                    margin-left: 5px;
+                    border-bottom:2px solid $color-lien;
+                    width:10%;
+                    text-transform:uppercase;  
+                }                                      
+            }
+        }                            
+    }
+    .carte_plats{
+        display:flex;
+        align-items: center;
+        margin: 10px auto;
+        border-radius: 15px;
+        background-color: $color-primary-body;
+        width:100%; 
+        transition:0.2s;
+        @include main-shadow;
+        overflow: hidden; 
+        .carte_plats--details {
+            width: 65%;
+            margin:5px 15px;
+            h3 {
+                font-weight:bold;
+                margin:10px;
+                max-width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            p {
+                max-width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                margin:10px;
             }                            
         }
-           
-        .carte_plats{
-            
-            display:flex;
-            align-items: center;
-            margin: 10px auto;
-            border-radius: 15px;
-            background-color: $color-primary-body;
-            width:100%; 
-            transition:0.2s;
-                    
-            @include main-shadow;
-            overflow: hidden; 
-                              
-            .carte_plats--details {
-                width: 65%;
-                margin:5px 15px;
-                
-                h3 {
-                    font-weight:bold;
-                    margin:10px;
-                    max-width: 100%;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                }
-                p {
-                    max-width: 100%;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    margin:10px;
-                }                            
-            }
-            .price{                        
-                width:35%;
-                font-weight: bold; 
-                text-align: right; 
-                padding-right:30px;                     
-            }  
-            .menu-icon{
-                height: 100%;
-            }                          
-        }
+        .price{                        
+            width:35%;
+            font-weight: bold; 
+            text-align: right; 
+            padding-right:30px;                     
+        }  
+        .menu-icon{
+            height: 100%;
+        }                          
     }
-
-        .aside_restaurant{
-                .btn{
-                    margin: 40px;
-                    background: rgb(147,86,220);
-        			background: linear-gradient(357deg, rgba(147,86,220,1) 30%, rgba(255,121,218,1) 100%);
-                    border-radius: 25px 25px 25px 25px;
-                    color: $color-primary-body;
-                    font-size: 18px;
-                    line-height: 45px;
-                    padding-left:10px;
-                    padding-right:10px;
-                    transition-property:transform;
-                    transition-duration:3s;
-                    opacity:1;
-                    transition: opacity 250ms;
-                    height: 45px;
-                    width: 200px;
-                        p{
-                         text-align:center;
-                            }
-                        &:hover{
-                            
-                                background-color: lighten($color-primary-btn,5);
-                                opacity:0.8;
-                                box-shadow: 5px 3px 8px  darken($color-grey-shadow, 30%)
-                                
-                            }
-                            
-                        }    
-            } 
+}
+.aside_restaurant{
+    .btn{
+        margin: 40px;
+        background: rgb(147,86,220);
+        background: linear-gradient(357deg, rgba(147,86,220,1) 30%, rgba(255,121,218,1) 100%);
+        border-radius: 25px 25px 25px 25px;
+        color: $color-primary-body;
+        font-size: 18px;
+        line-height: 45px;
+        padding-left:10px;
+        padding-right:10px;
+        transition-property:transform;
+        transition-duration:3s;
+        opacity:1;
+        transition: opacity 250ms;
+        height: 45px;
+        width: 200px;
+        p{
+            text-align:center;
+        }
+        &:hover{
+            background-color: lighten($color-primary-btn,5);
+            opacity:0.8;
+            box-shadow: 5px 3px 8px  darken($color-grey-shadow,20%);
+        }    
+    } 
+}
         
     
          
