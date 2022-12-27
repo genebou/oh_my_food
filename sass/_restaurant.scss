@@ -87,6 +87,7 @@
         background-color: $color-primary-body;
         width:100%; 
         transition:0.2s;
+        cursor:pointer;
         @include main-shadow;
         overflow: hidden; 
         .carte_plats--details {
@@ -112,10 +113,12 @@
             width:35%;
             font-weight: bold; 
             text-align: right; 
-            padding-right:30px;                     
+            padding-right:30px; 
+            cursor:pointer;                    
         }  
         .menu-icon{
             height: 100%;
+            cursor: pointer;
         }                          
     }
 }
