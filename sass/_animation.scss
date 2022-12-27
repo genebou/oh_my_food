@@ -130,7 +130,7 @@
 		border-radius: 0px 15px 15px 0px;
 	}
 	  i {
-		transition: all 1s .5s;
+		transition: all 1s .5s ease-out;
 		animation-name:check;
 		animation-fill-mode: forwards;
 		animation-iteration-count: 1;
