@@ -99,12 +99,13 @@ margin-bottom: 30px;
 			@include main-shadow;
 				.fonctionnement-numero {
 				width: 20px;
-				border-radius: 25px;
+				border-radius: 50px;
 				background-color: $color-primary-btn;
 				margin-left:-10px;
+				padding:5px;
 					p{					
 					color: $color-primary-body;
-					font-size: 20px;
+					font-size: 11px;
 					width: 100%;
 					text-align: center;
 					}
@@ -131,9 +132,9 @@ margin-bottom: 30px;
 				  }
 				}
 				  	&:hover{
-						background-color: darken($color-grey-secondary,5%);
+						background-color: #9356dc36;
 						
-						box-shadow: 5px 3px 6px 1px darken($color-grey-secondary, 10%);				
+						box-shadow: 5px 3px 6px 1px #d9d9d9;				
 							.fonctionnement-ico{
 							
 							color:darken($color-primary-btn,5%);
